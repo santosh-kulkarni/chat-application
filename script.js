@@ -18,15 +18,14 @@ function listenForChildChangeEvent() {
         var html = "";
         snapshot = snapshot.val();
         if(snapshot["name"] === "Santosh") {
-            html = html + "<span style='padding: 5px; background-color: #dcf8c6; margin-bottom: 10px; float: right;'>";
+            html = html + "<span style='padding: 5px 10px 5px 10px; background-color: #dcf8c6; margin-bottom: 10px; float: right;'>";
             html  = html + snapshot["name"] + " : " + snapshot["message"] ;
             html = html + "</span> </br> </br>";
         }
         else {
-            html = html + "<span style='padding: 5px; background-color: #ECE5DD; margin-bottom: 10px; float: left;'>";
+            html = html + "<span style='padding: 5px 10px 5px 10px; background-color: #ECE5DD; margin-bottom: 10px; float: left;'>";
             html  = html + snapshot["name"] + " : " + snapshot["message"] ;
             html = html + "</span> </br> </br>";
-            
         }    
         $(document).ready(function() {
             $("#data").append(html);
