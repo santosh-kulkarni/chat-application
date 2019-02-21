@@ -17,7 +17,7 @@ function listenForChildChangeEvent() {
     ref.on("child_added", function(snapshot) {
         var html = "";
         snapshot = snapshot.val();
-        if(snapshot["name"] === "Santosh") {
+        if(snapshot["name"] === "Srinivas") {
             html = html + "<span style='padding: 5px 10px 5px 10px; background-color: #dcf8c6; margin-bottom: 10px; float: right;'>";
             html  = html + snapshot["name"] + " : " + snapshot["message"] ;
             html = html + "</span> </br> </br>";
@@ -36,7 +36,7 @@ function storeData() {
     var database = firebase.database().ref("message");
     var newMSG = database.push();
     newMSG.set({
-        name : "Santosh",
+        name : "Srinivas",
         message : document.getElementById("msg").value
     });
     document.getElementById("msg").value = "";
