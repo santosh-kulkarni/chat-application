@@ -1,0 +1,14 @@
+#msg {
+    width: 100%;
+    border-color: #fff; 
+    border-radius: 21px; 
+    border-style: solid; 
+    border-width: 0px;
+    padding: 7px;
+}
+#sendImage {
+    cursor: pointer; 
+    margin-left: 1%; 
+    width: 40px;
+    height: 30px;
+}
