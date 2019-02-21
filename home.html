@@ -11,7 +11,21 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src='script.js'></script>
     </head>
-    <body onload="initialize()">
-       <h1 id="data"></h1>
+    <body onload="initialize()" style='padding: 15px;'>
+       <div id="data">
+            
+       </div>
+       <div style="width: 100%; position: fixed; bottom: 15px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <input type="text" id="msg" class="form-control" placeholder="Enter the message" />
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-8 col-xs-8">
+                    <button onclick="storeData();" class="btn btn-info">Send</button>
+                </div>
+            </div>
+        </div>
+       </div>
     </body>
 </html>
