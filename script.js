@@ -45,7 +45,7 @@ function listenForChildChangeEvent() {
         snapshot = snapshot.val();
         var html = "";
         for(val in snapshot) {
-            html = html + "<div> <img  src='man.png' style='display: inline; width: 40px; height: 40px;' alt='Profile Photo' /> <h4 style='padding-left: 10px; display: inline'>" + snapshot[val]["displayName"] + "</h4></div><hr>";
+            html = html + "<div> <img  src='man.png' style='display: inline; width: 30px; height: 30px;' alt='Profile Photo' /> <h5 style='padding-left: 10px; display: inline'>" + snapshot[val]["displayName"] + "</h5></div><hr>";
         }
         $(document).ready(function() {
             $("#usersData").html(html);
@@ -65,7 +65,6 @@ function storeData() {
 function login() {
     var email = document.getElementById('emailid').value;
     var pass = document.getElementById("pass").value;
-    alert(email + pass);
     firebase.auth().signInWithEmailAndPassword(email, pass).catch(function(error) {
         var errorMessage = error.message;
         alert(errorMessage);
