@@ -1,18 +1,35 @@
 <html>
     <head>
-        <title>Log In To Your Account</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src='script.js'></script>
-        <link rel="stylesheet" href="style.css">
+            <meta charset="utf-8">
+            <title>Log In</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <script src='script.js'></script>
+            <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-
+    <body  style="margin-top: 100px;">
+            <div id="logInBox">
+                <center> <img src="face.png" alt="Log in Icon" style="border-radius: 50%; width: 150px; height: 150px;"/></center>
+                </br>
+                </br>
+                <label><b>Email</b></label>
+                </br>
+                <input type="text" onfocus="this.value=''" id = "emailid" placeholder="Enter Your Registered Email ID" value="" autocomplete="off" />
+                </br>
+                </br>
+                <label><b>Password</b></label>
+                </br>
+                <input type="password" onfocus="this.value=''" id="pass" value="" placeholder="Enter Your Password" />
+                </br>  
+                </br>
+                <button id="login" onclick="login()">Log In</button>
+                </br>
+            </div>
     </body>
 </html>
